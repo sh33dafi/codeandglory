@@ -1,0 +1,22 @@
+{
+  "name": "codeandglory",
+  "version": "1.0.0",
+  "description": "Static web for codeandglory.be",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh33dafi/codeandglory.git"
+  },
+  "author": "Yannick Houbrix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh33dafi/codeandglory/issues"
+  },
+  "homepage": "https://github.com/sh33dafi/codeandglory#readme",
+  "dependencies": {
+    "node-static": "^0.7.7"
+  }
+}

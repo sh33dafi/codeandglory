@@ -1,6 +1,6 @@
 {
   "name": "codeandglory",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "Static web for codeandglory.be",
   "main": "index.js",
   "scripts": {

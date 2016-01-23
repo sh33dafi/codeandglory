@@ -1,0 +1,90 @@
+$font-weight-small: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$accent-color: #F2F2F2;
+$text-color: #444;
+$light-color: #F9F9F9;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: $font-weight-small;
+  font-size: 1.2em;
+  color: $text-color;
+  background-color: $light-color;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: $text-color;
+}
+
+header {
+  display: flex;
+  margin-top: 100px;
+}
+
+header, .content {
+  margin-left:100px;
+  margin-right:100px;
+}
+
+footer {
+  position: relative;
+  background-color: $accent-color;
+  min-height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .fa {
+    font-size: 2em;
+    margin: 20px 10px;
+  }
+}
+
+p {
+  margin: 25px 0px;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: $font-weight-normal;
+  flex-grow: 1;
+}
+
+.menu {
+
+  display: flex;
+  font-size: 1.5em;
+  span {
+    margin: 0 5px;
+    align-self: flex-end;
+
+    a {
+      text-decoration: none;
+      font-weight: $font-weight-small;
+
+      &:hover {
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  margin-top: 50px;
+}

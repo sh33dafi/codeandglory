@@ -4,8 +4,16 @@
   "description": "Static web for codeandglory.be",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run build",
     "start": "node index.js",
-    "postversion": "git push && git push heroku origin"
+    "postversion": "git push",
+    "heroku-push": "git push heroku master",
+    "patch-release": "nvm version patch",
+    "minor-release": "nvm version minor",
+    "major-release": "nvm version major",
+    "watch-sass": "npm run compile-sass -- --watch",
+    "compile-sass": "node-sass  --output-style compressed --ident-type space --output ./css ./sass",
+    "build": "npm run compile-sass"
   },
   "repository": {
     "type": "git",
@@ -19,5 +27,8 @@
   "homepage": "https://github.com/sh33dafi/codeandglory#readme",
   "dependencies": {
     "node-static": "^0.7.7"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2"
   }
 }

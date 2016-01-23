@@ -4,7 +4,6 @@
   "description": "Static web for codeandglory.be",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run build",
     "start": "node index.js",
     "postversion": "git push",
     "heroku-push": "git push heroku master",
